@@ -1,12 +1,12 @@
 
-let loader = document.querySelector(".loader")
-setTimeout(
-    () => {
-        setTimeout(() => {
-            loader.style.display = "none";
-        }, 0)
+// let loader = document.querySelector(".loader")
+// setTimeout(
+//     () => {
+//         setTimeout(() => {
+//             loader.style.display = "none";
+//         }, 0)
 
-    }, 1500)
+//     }, 1500)
 //_____________________________________________________________________________________
 let voice = false;
 let id0, id1, id2, id3, id4, id5;
@@ -151,13 +151,14 @@ function reset() {
 
             sp = sp + .25;
             srcx.playbackRate = sp;
-            alert("Song speed: " + sp)
+            alert("(Under devlopement) Song speed: " + sp)
             if (sp == "2") {
                 sp = .5;
             }
         });
     })
     //________________________________________________________cut _______________________________
+    let defix = document.querySelector(".defix")
     let cutmu = document.querySelectorAll(".cutmu")
     cutmu.forEach(ex => {
         ex.addEventListener("click", smallx);
@@ -227,6 +228,8 @@ function onmik() {
     bigc.setAttribute("class", "bigcir bigcirx")
     cir.setAttribute("class", "cir cirx")
     onmice.setAttribute("class", "onmice onmicex")
+    
+    alert("This feature is in beta version (only one time voice recorded, don't try multiple time othrewise site must crash) if site crash then refresh our site  ")
 }
 
 byx.addEventListener("click", function () {
