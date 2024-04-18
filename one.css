@@ -1,0 +1,377 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body,
+.loader,
+.outcamera,
+.mult,
+.mult>div,
+.llogo,
+.top,
+.nav,
+.pics,
+.info,
+.inmain,
+.sec,
+.photo,
+.editx,
+.radio,
+.cnt,
+.cnt>div,
+.brf,
+.inp,
+.save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* _____________________________________________________loader__________________________________________________ */
+.noload {
+    width: 100%;
+    transition: .1s;
+
+}
+
+.loader {
+    z-index: 5;
+    transition: .2s;
+    overflow: hidden;
+    font-family: monospace;
+    position:fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.lgall {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.gallery {
+    background-image: linear-gradient(300deg, rgb(78, 78, 78), rgb(129, 129, 129), rgb(34, 34, 34));
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    left: 0px;
+    font-size: xx-large;
+    animation: go .5s ease-out .2s 1 normal backwards;
+}
+
+@keyframes go {
+    0% {
+        left: -110px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.by {
+    background-image: linear-gradient(45deg, rgb(0, 158, 231), rgb(199, 120, 255), rgb(175, 0, 172));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: large;
+    position: absolute;
+    bottom: 30px;
+}
+
+/* ____________________________________________________body________________________________________________________ */
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.outcamera {
+    font-family: monospace;
+    display: none;
+    transition: .6 ease;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.668);
+}
+
+.note {
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: rgb(231, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.camera {
+    margin: 2.5%;
+    aspect-ratio: 4/3;
+    width: 90%;
+    background-color: rgb(234, 234, 234);
+}
+
+.canvas {
+    margin: 2.5%;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.mult {
+    gap: 20px;
+    flex-direction: row;
+}
+
+.mult>div {
+    height: 20px;
+    width: 60px;
+    border-radius: 10px;
+    color: rgb(139, 0, 0);
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.mult>div:hover {
+    background-color: rgb(217, 0, 0);
+    color: white;
+}
+
+.top {
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(135, 135, 135);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+
+}
+
+.nav {
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+}
+
+
+
+.noload {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+.pics {
+    position: relative;
+    font-size: 24px;
+    color: grey;
+    width: 100%;
+    height: 300px;
+}
+
+.info {
+    height: 30px;
+    width: 98%;
+    gap: 10px;
+    padding: 0 2% 0 0;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.main {
+    padding: 0 0 50px 0;
+    width: 99%;
+}
+
+.inmain {
+    flex-flow: column-reverse;
+    flex-wrap: wrap-reverse;
+    padding: 4px;
+    width: calc(100%-8px);
+}
+
+.sec {
+    width: 98%;
+}
+
+.date {
+    color: rgb(101, 101, 101);
+    font-size: 17px;
+    width: 100%;
+}
+
+.photo {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.big {
+    position: relative;
+    width: 24.5%;
+    margin: .25%;
+    background-image: radial-gradient(160px, rgb(154, 154, 154), rgb(173, 173, 173), rgb(202, 202, 202), rgb(232, 232, 232));
+    aspect-ratio: 1/1;
+}
+
+.fav {
+    cursor: pointer;
+    opacity: 1;
+    fill: rgb(202, 202, 202);
+}
+
+.small {
+    /* filter: sepia(0) saturate(1)opacity(1) invert(0) hue-rotate(0deg) grayscale(0) contrast(1) brightness(1) blur(0px); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    cursor: pointer;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: .2s all;
+}
+
+.smallx {
+    
+    height: 100%;
+    width: 100%;
+    position: static;
+    max-width: 90vw;
+    max-height:70vh ;
+}
+
+.editx {
+    display: none;
+    gap: 20px;
+    justify-content: end;
+    flex-direction: row;
+    width: 95%;
+    height: 10%;
+}
+
+.info svg,
+.editx svg {
+    cursor: pointer;
+}
+
+.mid {
+    width: 100%;
+    height: 100%;
+}
+
+.midx {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.878);
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.radio {
+    display: none;
+    color: rgb(209, 209, 209);
+    font-family: monospace;
+    justify-content: flex-start;
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    height: 75px;
+}
+
+.cnt::-webkit-scrollbar {
+    display: none;
+}
+
+.cnt {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-direction: row;
+    width: 90%;
+}
+
+.cnt>div {
+    word-break: keep-all;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.brf {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.inp {
+    gap: 15px;
+    flex-direction: row;
+    color: rgb(197, 197, 197);
+    width: 70%;
+}
+
+.rng {
+    width: 60%;
+    height: 2px;
+    outline: none;
+}
+
+.save {
+    background-color: rgb(152, 152, 152);
+    color: white;
+    width: 35px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+
+
+/* _______________________________________________________on pc_________________________________________________ */
+@media(min-width:700px) {
+    .noload {
+        width: 60%;
+    }
+
+    .top,
+    .outcamera {
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+
+    }
+
+    .camera,
+    .canvas {
+        width: 80%;
+    }
+
+    .big {
+        width: 19%;
+        margin: .5%;
+    }
+}

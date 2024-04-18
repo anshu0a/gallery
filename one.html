@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="one.css">
+</head> 
+
+<body>
+    <!-- <div class="loader">
+        <div class="llogo" style="flex-direction: row; gap:10px; transform: translate(-35px,0%); ">
+            <svg class="lgall" viewBox="0 0 12.5 24" width="100" height="70">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="#ff003c" d="M1 12C1 4 4 1 12 1s11 3 11 11-3 11-11 11S1 20 1 12"></path>
+                <path fill="#fff"
+                    d="M16.62 12.83a9.25 9.25 0 0 0-3-.83 9.25 9.25 0 0 0 3-.83A1.6 1.6 0 0 0 17.2 9a1.59 1.59 0 0 0-2.2-.58 9.21 9.21 0 0 0-2.2 2.14 9 9 0 0 0 .76-3 1.59 1.59 0 0 0-3.18 0 9 9 0 0 0 .76 3A9.21 9.21 0 0 0 9 8.42 1.59 1.59 0 0 0 6.8 9a1.6 1.6 0 0 0 .58 2.17 9.25 9.25 0 0 0 3 .83 9.25 9.25 0 0 0-3 .83A1.6 1.6 0 0 0 6.8 15a1.59 1.59 0 0 0 2.2.58 9.21 9.21 0 0 0 2.2-2.14 9 9 0 0 0-.76 3 1.59 1.59 0 0 0 3.18 0 9 9 0 0 0-.76-3A9.21 9.21 0 0 0 15 15.58a1.59 1.59 0 0 0 2.2-.58 1.6 1.6 0 0 0-.58-2.17Zm-4.62.23A1.06 1.06 0 1 1 13.06 12 1.07 1.07 0 0 1 12 13.06Z">
+                </path>
+            </svg>
+            <p class="gallery">Gallery</p>
+        </div>
+        <p class="by">From anshu</p>
+    </div> -->
+    <div class="outcamera">
+        <div class="note">Allow to use camera</div>
+        <video class="camera cax" autoplay>
+            <p>Click allow for camera</p>
+        </video>
+        <canvas class="canvas" style="display:none"></canvas>
+        <div class="mult">
+            <div class="capt" style="display:none">Capture</div>
+            <div class="bck">Back</div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="nav">
+            <a class="innav" href="one.html" style="color:rgb(0, 110, 255);">Photos</a>
+            <a class="innav" href="three.html">videos</a>
+            <a class="innav" href="two.html">Musics</a>
+            <div class="mnu">
+                <svg class="sx " width="20" viewBox="0 0 24 24">
+                    <line class="line2" fill="none" stroke="grey" stroke-linecap="round" stroke-libejoin="round"
+                        stroke-width="1.5" x1="3" x2="20" y1="5" y2="5"></line>
+                    <line class="line2" fill="none" stroke="grey" stroke-linecap="round" stroke-libejoin="round"
+                        stroke-width="1.5" x1="3" x2="20" y1="12" y2="12"></line>
+                    <line class="line2" fill="none" stroke="grey" stroke-linecap="round" stroke-libejoin="round"
+                        stroke-width="1.5" x1="3" x2="20" y1="19" y2="19"></line>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="noload">
+        <div class="pics">
+            <p>Pictures</p>
+        </div>
+
+        <div class="main">
+            <div class="info">
+                <svg class="clkcam" viewBox="-35 0 600 512 " width="21" fill="none">
+                    <path stroke-width="45" stroke="grey"
+                        d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                </svg>
+                <input id="add" type="file" accept="image/*" style="display:none">
+                <label for="add"><svg class="inpux" width="17" fill="grey" viewBox="0 0 448 512">
+                        <path
+                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                    </svg></label>
+                <svg viewBox="0 0 512 512" width="18" fill="grey">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+
+                <svg class="sx " width="21" viewBox="0 0 24 24">
+                    <line class="line2" fill="none" stroke="grey" stroke-linecap="round" stroke-libejoin="round"
+                        stroke-width="4" x1="9" x2="9" y1="4" y2="4"></line>
+                    <line class="line2" fill="none" stroke="grey" stroke-linecap="round" stroke-libejoin="round"
+                        stroke-width="4" x1="9" x2="9" y1="12" y2="12"></line>
+                    <line class="line2" fill="none" stroke="grey" stroke-linecap="round" stroke-libejoin="round"
+                        stroke-width="4" x1="9" x2="9" y1="20" y2="20"></line>
+                </svg>
+            </div>
+            <div class="inmain">
+                <div class="sec" style="display:none">
+                    <p class="date">date</p>
+                    <div class="photo">
+                        <div class="big" style="display:none">
+                            <div class="mid">
+                                <div class="editx">
+                                    <svg width="7" fill="rgb(202, 202, 202)" viewBox="0 0 192 512">
+                                        <path
+                                            d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z" />
+                                    </svg>
+                                    <svg class="delt" width="15" fill="rgb(202, 202, 202)" viewBox="0 0 448 512">
+                                        <path
+                                            d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                    </svg>
+                                    <svg class="fav" width="20" height="20" viewBox="0 0 512 512">
+                                        <path
+                                            d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                                    </svg>
+                                    <svg class="pen" viewBox="0 0 512 512" width="15" fill="rgb(200,200,200)">
+                                        <path
+                                            d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+                                    </svg>
+                                    <svg class="cut" viewBox="0 0 384 512" width="15" fill="rgb(200,200,200)">
+                                        <path
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                                    </svg>
+                                </div>
+                                <img class="small" src="img/sa8.jpg">
+                                <div class="radio">
+                                    <div class="cnt">
+                                        <div>Blur</div>
+                                        <div>Brightness</div>
+                                        <div>Grayscale</div>
+                                        <div>Opacity</div>
+                                        <div>Invert</div>
+                                        <div>Contrast</div>
+                                        <div>Saturate</div>
+                                        <div>Sepia</div>
+                                        <div>Hue-Rotate</div>
+                                    </div>
+                                    <div class="brf">
+                                        <p style="width:30%; color:rgb(0, 162, 255);text-align: center;">Blur</p>
+                                        <div class="inp">
+                                            <p>0</p>
+                                            <input class="rng" type="range" min="0" max="1" value="0" step=".01">
+                                            <p>1</p>
+                                            <div class="save">Save</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="one.js"></script>
+</body>
+
+</html>
