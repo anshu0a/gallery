@@ -247,6 +247,7 @@ a {
     height: 100%;
     width: 100%;
     transition: .2s all;
+    object-fit: contain;
 }
 
 .smallx {
